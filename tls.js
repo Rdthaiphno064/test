@@ -43,8 +43,7 @@ const sigalgs = [
  try {
 var UAs = fs.readFileSync('ua.txt', 'utf-8').replace(/\r/g, '').split('\n');
  } catch(error){
-     console.log('Fail to load ua.txt');
-     process.exit();
+     console.log('Fail to load ua.txt')
  }
 class TlsBuilder {
     constructor (socket){
@@ -54,7 +53,7 @@ class TlsBuilder {
     }
 
     Alert(){
-        console.log('Attack Sent');
+        console.log('HTTP/2 Flood by @Mrasdaas');
     }
 
     http2TUNNEL(socket){
